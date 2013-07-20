@@ -1,14 +1,12 @@
 var express = require('express');
 var fs = require('fs');
+
 var app = express.createServer(express.logger());
 
-var content = fs.readFileSync("index.html");
-
-app.get('/', function(request, response) {
-  response.send(content.toString());
+app.configure(function () {
+    app.use(
+        "/", //the URL throught which you want to access to you static content
+        express.static(__dirname) //where your static content is located in your filesystem
+    );
 });
-
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+app.listen(8080); //the port you want to use
