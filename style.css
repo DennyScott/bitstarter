@@ -111,6 +111,16 @@ body {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+/* Large Desktop */
+@media (min-width:980px){
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
+}
 
 @media (max-width: 979px) {
 
