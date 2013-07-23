@@ -17,18 +17,8 @@
 
   <body>
 
-  <div id="header">
-      <div class="wrapper clearfix">
-          <h1 id="lockitron_header">
-              <a href="/">BitShop</a>
-          </h1>
-      </div>
-  </div>
-
-
-
   <!-- NAVBAR
-  ================================================== -->
+================================================== -->
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
           <div class="container">
@@ -49,43 +39,51 @@
       </div>
   </div>
 
+  <!-- HEADER
+================================================== -->
+  <div id="header">
+      <div class="wrapper clearfix">
+          <h1 id="lockitron_header">
+              <a href="/">BitShop</a>
+          </h1>
+      </div>
+  </div>
+
 
 
 
   <!-- Gray Background
   ================================================== -->
-  <div class= "gray_background">
+  <div class= "row-fluid gray_background">
       <div class= "wrapper center">
-          <h3>A new way to do a "Bit" of shopping!</h3>
+          <h3>A Bit of shopping, a whole new way!</h3>
       </div>
 
-      <div class="wrapper centerfix">
+      <div class="wrapper centerfix" id="order">
           <div id="video">
               <iframe width="512" height="385" src="https://www.youtube.com/v/D1L3o88GKew?autohide=1&showinfo=0&rel=0&autoplay=0">
               </iframe>
           </div>
+              <div id="backing">
+                   <ul>
+                       <li class="stats" id="backers">N/A<span>backers</span></li>
+                       <li class="stats">N/A<span>$10,000</span></li>
+                       <li class="stats" id="days">∞<span>days left</span></li>
+                   </ul>
+                  <div id="progress_bg" class="small">
+                      <div id="progress" class style="width: 100%;">
 
-          <div id="backing">
-               <ul>
-                   <li class="stats" id="backers">N/A<span>backers</span></li>
-                   <li class="stats">N/A<span>$10,000</span></li>
-                   <li class="stats" id="days">∞<span>days left</span></li>
-               </ul>
-              <div id="progress_bg" class="small">
-                  <div id="progress" class style="width: 100%;">
-
+                      </div>
+                  </div>
+                  <div id="reserve_container">
+                      <p id="ship_date">May 2014</p>
+                      <a href="https://github.com/lockitron/selfstarter" class="blue_button reserve">Preorder Now</a>
+                      <p id="price">Open your own shop!</p>
+                      <p>Buy unique products from around the world, or sell them in your personal shop window, all for free!</p>
+                      <div class="fb-like" data-send="false" data-width="70" data-layout="box_count" data-show-faces="true"></div>
                   </div>
               </div>
-              <div id="reserve_container">
-                  <p id="ship_date">May 2014</p>
-                  <a href="https://github.com/lockitron/selfstarter" class="blue_button reserve">Preorder Now</a>
-                  <p id="price">Open your own shop!</p>
-                  <p>Buy unique products from around the world, or sell them in your personal shop window, all for free!</p>
-                  <div class="fb-like" data-send="false" data-width="70" data-layout="box_count" data-show-faces="true"></div>
-              </div>
-          </div>
-
-      </div>
+    </div>
   </div>
   <div id="clear"></div>
 
